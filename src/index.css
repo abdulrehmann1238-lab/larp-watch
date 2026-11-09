@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #F8F6F1;
+    color: #24231F;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for luxury feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1EEE7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D8CCB8;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A58A5B;
+  }
+}
+
+/* Editorial typography utilities */
+.font-editorial-heading {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+.font-editorial-subheading {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+.label-tracking {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.725rem;
+  font-weight: 500;
+}
+
+/* Subtle image overlay gradients for luxury editorial feel */
+.editorial-mask {
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px -5px rgba(165, 138, 91, 0.25);
+}
+
